@@ -1,0 +1,31 @@
+.login-header,
+.register-header,
+.index-header {
+    text-align: center;
+}
+
+.login-form,
+.register-form,
+.index-form {
+    padding: 10px; 
+}
+
+.login-div,
+.register-div {
+    margin-bottom: 15px;
+}
+
+.login-button,
+.register-button,
+.index-button {
+    width: 75px;
+    height: 35px;
+    font-size: 15px;
+    margin-top: 34px;
+}
+
+.login-register,
+.register-login {
+    margin-left: 10px;
+    font-size: 18px;
+}

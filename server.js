@@ -20,6 +20,7 @@ initializePassport(
 const app = express();
 app.set('view-engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
+app.use(express.static('public'));
 app.use(flash());
 app.use(session({
     secret: process.env.SESSION_SECRET,
@@ -69,7 +70,7 @@ app.delete('/logout', (req, res) => {
     res.redirect('/login');
 });
 
-function checkAuthenticated(req, res,  next) {
+function checkAuthenticated(req, res, next) {
     if (req.isAuthenticated()) {
       return next();
     }
