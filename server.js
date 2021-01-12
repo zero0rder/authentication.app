@@ -7,10 +7,9 @@ import session from 'express-session';
 import flash from 'express-flash';
 import { config } from 'dotenv';
 import methodOverride from 'method-override';
-
 config();
-let users = [];
 
+let users = [];
 initializePassport(
     passport, 
     email => users.find(user => user.email === email),
